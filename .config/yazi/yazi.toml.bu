@@ -1,0 +1,133 @@
+# Yazi configuration file
+
+# General settings
+[general]
+show_hidden = false # Show hidden files and directories
+sort_by = "name"    # Sort files by name, size, mtime, or type
+sort_reverse = false # Reverse sort order
+show_symlink = true # Show symlink targets
+show_icons = true # Show file icons
+show_git_status = true # Show Git status indicators
+show_relative_path = false # Show relative path in the title bar
+show_selection = true # Show selection indicators
+show_cursor = true # show the cursor
+show_help = true # show help in the bottom bar
+show_status = true # Show status bar
+show_header = true # Show header
+show_number = false # Show Number of files
+show_size = true # Show file size
+show_mtime = true # Show file last modified time
+show_permissions = true # Show file permissions
+show_owner = true # Show file owner
+show_group = true # Show file group
+show_type = true # Show file type
+show_extension = true # Show file extension
+show_block = true # show file block size
+show_inode = true # show file inode number
+show_device = true # show file device number
+show_hardlinks = true # show hard link count
+show_context = true # show file context
+
+# Preview settings
+[preview]
+max_width = 800  # Maximum width of image previews
+max_height = 600 # Maximum height of image previews
+video_thumbnails = true # Enable video thumbnails
+pdf_thumbnails = true # Enable PDF thumbnails
+markdown_render = true # Enable markdown render
+media_player = "mpv" # Media player command (e.g., mpv, vlc)
+image_backends = ["kitty", "sixel", "ascii"] # image backend preference
+video_backends = ["ffmpeg"] # video backend preference
+pdf_backends = ["poppler"] # pdf backend preference
+markdown_backends = ["mdcat"] # markdown backend preference
+
+# Keybindings
+[keymap]
+quit = "q"
+help = "?"
+up = "k"
+down = "j"
+page_up = "<C-u>"
+page_down = "<C-d>"
+half_page_up = "<C-b>"
+half_page_down = "<C-f>"
+top = "gg"
+bottom = "G"
+cd_up = "h"
+cd_down = "l"
+cd_select = "<CR>"
+toggle_hidden = "."
+yank = "y"
+paste = "p"
+delete = "dd"
+rename = "r"
+create_file = "a"
+create_directory = "A"
+open_in_terminal = "t"
+open_in_editor = "e"
+select_all = "ggVG"
+clear_selection = "<Esc>"
+search = "/"
+filter = ":"
+sort_name = "sn"
+sort_size = "ss"
+sort_mtime = "sm"
+sort_type = "st"
+sort_reverse = "sr"
+refresh = "R"
+preview_toggle = "z"
+preview_scroll_up = "<C-y>"
+preview_scroll_down = "<C-e>"
+preview_page_up = "<C-u>"
+preview_page_down = "<C-d>"
+preview_half_page_up = "<C-b>"
+preview_half_page_down = "<C-f>"
+preview_top = "gt"
+preview_bottom = "gb"
+preview_zoom_in = "+"
+preview_zoom_out = "-"
+preview_reset_zoom = "="
+preview_toggle_fullscreen = "f"
+preview_rotate_left = "["
+preview_rotate_right = "]"
+preview_next_page = ">"
+preview_previous_page = "<"
+preview_play_pause = " "
+preview_volume_up = ")"
+preview_volume_down = "("
+preview_seek_forward = "."
+preview_seek_backward = ","
+preview_step_forward = "<S-."
+preview_step_backward = "<S-,"
+
+# Theme settings
+[theme]
+# You can customize colors and styles here.
+# For example:
+ background = "#000000"
+# foreground = "#cdd6f4"
+# selection_background = "#000000"
+# selection_foreground = "#cdd6f4"
+# directory = "#89b4fa"
+# symlink = "#a6e3a1"
+# executable = "#f9e2af"
+# media = "#fab387"
+# archive = "#f5c2e7"
+# document = "#94e2d5"
+# other = "#cdd6f4"
+
+# Plugin settings
+[plugin]
+# You can define custom plugins here.
+# For example:
+# [[plugin.plugins]]
+# name = "my_plugin"
+# command = "my_plugin_command"
+# keymap = "mp"
+
+# File type icons
+[icons]
+# You can define custom file type icons here.
+# For example:
+# "rs" = "" # Rust files
+# "py" = "" # Python files
